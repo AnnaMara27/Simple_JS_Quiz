@@ -1,26 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700&display=swap");
+
 body {
-  background-color: #f06226;
-  background-color: #ff9f1c;
+  background-color: #ffbf69;
   color: #fff;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 14px;
+  font-family: "Mulish", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
 }
 
 #container {
   width: 60%;
-  background-color: #199fdb;
-  background-color: #2ec4b6;
+  background-color: #277da1;
+  border-radius: 10px;
   margin: 20px auto;
   overflow: auto;
-  padding: 25px;
+  padding: 30px;
 }
 
 header {
+  border-bottom: #f3722c dashed 2px;
   text-align: center;
-  border-bottom: #fff dashed 1px;
 }
 
 header h1 {
+  font-weight: 400;
   margin: 0;
   padding: 0;
 }
@@ -28,32 +31,45 @@ header h1 {
 header p {
   padding: 0;
   margin-top: 5px;
-  color: #000;
+  color: #ffbf69;
 }
 
 section {
   min-height: 400px;
 }
 
-footer {
-  text-align: center;
+input[type="radio"] {
+  margin-right: 15px;
+  font-size: 16px;
 }
 
-input[type="submit"] {
-  background: #f06226;
+input[type="submit"],
+.btn {
+  background-color: #f3722c;
   border: 0;
+  border-radius: 5px;
   color: #fff;
+  font-size: 16px;
   padding: 10px 15px;
   cursor: pointer;
 }
 
 #results h3 {
-  background-color: #f06226;
-  padding: 10px;
-  margin: 10px 0;
+  background-color: #f9c74f;
+  border: 0;
+  border-radius: 5px;
+  color: #277da1;
+  padding: 10px 15px;
+  margin: 20px 0;
+  cursor: pointer;
 }
 
 #results span {
-  color: #000;
+  color: #e71d36;
   font-weight: bold;
+}
+
+footer {
+  margin-top: 100px;
+  text-align: center;
 }

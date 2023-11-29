@@ -42,8 +42,13 @@ function submitAnswers() {
   // alert(`You scored ${score} out of ${total}`);
 
   let results = document.getElementById("results");
-  results.innerHTML = `<h3>You scored <span>${score}</span> out of <span>${total}</span></h3>`;
-  console.log("test");
-  console.log(score);
+  results.innerHTML = `<h3>You scored <span>${score}</span> out of <span>${total}</span></h3>
+  <br>
+  <button class="btn" onClick="window.location.reload();">Play Again</button>`;
+
   return false;
 }
+
+const yearEl = document.querySelector(".year");
+const currentYear = new Date().getFullYear();
+yearEl.textContent = currentYear;
